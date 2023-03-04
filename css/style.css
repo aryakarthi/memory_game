@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
 *, *::after, *::before{
   box-sizing:border-box;
   padding:0;
@@ -9,9 +12,44 @@
 body{
   border-color:#faebd7;
   text-align:center;
+  font-family: 'Poppins', sans-serif;
+}
+
+section{
+  height: 100vh;
+  padding: 30px;
+  background: linear-gradient(325deg, #530587 30%,#871683 70%, #e423ae 100%);
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+#start-btn{
+  font-weight: bold;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color:mediumseagreen;
+  margin-bottom: 20px;
+}
+
+#random-no{
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ccc;
 }
 
 #container{
+  width:360px;
+  height:360px;
+  margin: 0 auto;
   margin-top:30px;
   display:flex;
   flex-wrap:wrap;
@@ -20,8 +58,9 @@ body{
 }
 
 #container div{
-  width:24%;height:100px;
-  background-color:#7fffd4;
+  width:100px;
+  height:100px;
+  border-radius: 6px;
   color:#000;
   text-align:center;
   line-height:100px;
@@ -29,7 +68,7 @@ body{
 }
 
 #container div.active{
-  background-color:#ff6b6b;
+  background-color:tomato;
   color:#fff;
 }
 
@@ -38,12 +77,13 @@ body{
 }
 
 #container div.active-success{
-  background-color:#c0ff62;
+  background-color:mediumseagreen;
   color:#fff;
 }
 
 #container div.active-success::after{
   background-color:rgba(0,0,0,0);
+  /* overflow: hidden; */
 }
 
 #container div::after{
